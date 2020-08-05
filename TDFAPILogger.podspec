@@ -17,6 +17,10 @@ Pod::Spec.new do |s|
 s.ios.deployment_target = '9.0'
 s.source_files = 'TDFAPILoggerExample/TDFAPILoggerExample/Classes/**/*.{h,m}'
 
-s.dependency 'AFNetworking', :subspecs => ['Reachability', 'Serialization', 'Security', 'NSURLSession']
+s.dependency 'AFNetworking/Reachability'
+s.dependency 'AFNetworking/Serialization'
+s.dependency 'AFNetworking/Security'
+s.dependency 'AFNetworking/NSURLSession'
+
 
 end
