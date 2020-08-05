@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 s.ios.deployment_target = '9.0'
 s.source_files = 'TDFAPILoggerExample/TDFAPILoggerExample/Classes/**/*.{h,m}'
 
-
-
+#此处fork过来删除了afnetworking依赖，因为UIWebView的原因，只能依赖子包，否则工程主项目podfile依赖子包会无效，后期升级AFNetworking版本可以避免此问题，本次为临时修改
+#s.dependency 'AFNetworking'
 
 end
